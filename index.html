@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>SAGAR.EXE | Cybersecurity Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAGAR.SHAHANI // ACCESS GRANTED</title>
 
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
   background: black;
-  color: #e6e6e6;
+  color: #00ff88;
+  font-family: monospace;
   overflow-x: hidden;
 }
 
@@ -22,244 +22,184 @@ canvas {
   z-index: -1;
 }
 
-/* TERMINAL INTRO */
-#terminal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  color: #00ff88;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 9999;
-  font-family: monospace;
-}
-
-.typing {
-  border-right: 2px solid #00ff88;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-/* HEADER */
-header {
+/* GLITCH TITLE */
+.glitch {
+  font-size: 42px;
   text-align: center;
-  padding: 80px 20px;
-}
-
-h1 {
-  font-size: 45px;
-  color: #00ff88;
+  margin-top: 40px;
   text-shadow: 0 0 10px #00ff88;
+  animation: flicker 2s infinite;
 }
 
-.tagline {
-  color: #aaa;
+@keyframes flicker {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.6; }
 }
 
 /* NAV */
 nav {
   text-align: center;
-  padding: 15px;
-  background: rgba(0,0,0,0.8);
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
+  margin: 20px;
 }
 
 nav a {
   color: #00ff88;
-  margin: 0 15px;
+  margin: 10px;
   text-decoration: none;
+  border: 1px solid #00ff88;
+  padding: 5px 10px;
   transition: 0.3s;
 }
 
 nav a:hover {
-  text-shadow: 0 0 10px #00ff88;
+  background: #00ff88;
+  color: black;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px 15%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
 }
 
-h2 {
-  color: #00ff88;
-  text-shadow: 0 0 5px #00ff88;
-}
-
-/* CARDS */
 .card {
-  background: rgba(20,20,20,0.8);
-  padding: 20px;
-  margin: 15px 0;
-  border-left: 3px solid #00ff88;
-  border-radius: 8px;
+  border: 1px solid #00ff88;
+  padding: 15px;
+  margin: 10px 0;
+  background: rgba(0,255,136,0.05);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.03);
   box-shadow: 0 0 15px #00ff88;
+  transform: scale(1.02);
 }
 
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  background: #111;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 20px;
-  color: #00ff88;
-  box-shadow: 0 0 5px #00ff88;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: rgba(0,0,0,0.8);
-  color: #777;
+/* TYPE EFFECT */
+#terminal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  font-size: 18px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- MATRIX CANVAS -->
 <canvas id="matrix"></canvas>
 
-<!-- TERMINAL INTRO -->
 <div id="terminal">
-  <div id="text" class="typing"></div>
+  <div id="text"></div>
 </div>
 
-<header>
-  <h1>SAGAR.EXE</h1>
-  <p class="tagline">Cybersecurity Student | Malware Analyst | CTF Player</p>
-</header>
+<div class="glitch">SAGAR.EXE</div>
+<p style="text-align:center;">ACCESSING CYBERSPACE... LOADING MODULES...</p>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#certs">Certifications</a>
+  <a href="#about">ABOUT</a>
+  <a href="#skills">SKILLS</a>
+  <a href="#projects">PROJECTS</a>
   <a href="#ctf">CTF</a>
-  <a href="#contact">Contact</a>
+  <a href="#contact">CONTACT</a>
 </nav>
 
 <section id="about">
-  <h2>About Me</h2>
+  <h2>ABOUT</h2>
   <div class="card">
     Cybersecurity student focused on malware analysis, reverse engineering,
-    digital forensics, and AI-based threat detection (FYP: AI in Malware Analysis).
+    digital forensics, and AI-based threat detection.
   </div>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Linux</span>
-    <span>Python</span>
-    <span>Wireshark</span>
-    <span>Nmap</span>
-    <span>Burp Suite</span>
-    <span>Malware Analysis</span>
-    <span>Reverse Engineering</span>
-    <span>OSINT</span>
-    <span>Machine Learning</span>
+  <h2>SKILLS</h2>
+  <div class="card">
+    Linux | Python | Wireshark | Nmap | Burp Suite | Malware Analysis |
+    Reverse Engineering | OSINT | Machine Learning
   </div>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>PROJECTS</h2>
 
   <div class="card">
-    <b>AI in Malware Analysis (FYP)</b><br/>
+    <b>AI in Malware Analysis (FYP)</b><br>
     ML-based malware detection using static + dynamic analysis.
   </div>
 
   <div class="card">
-    <b>Malware Investigation Reports</b><br/>
-    Behavioral analysis, persistence tracking, IOC extraction.
+    Malware Investigation Reports (IOC extraction, persistence analysis)
   </div>
 
   <div class="card">
-    <b>Network Security Lab</b><br/>
-    Packet capture analysis and intrusion detection experiments.
+    Network Security Lab (packet analysis & intrusion detection)
   </div>
-</section>
-
-<section id="certs">
-  <h2>Certifications</h2>
-
-  <div class="card">TryHackMe Profile</div>
-  <div class="card">Hack The Box Profile</div>
-  <div class="card">Cisco / Google / CompTIA Certificates</div>
 </section>
 
 <section id="ctf">
-  <h2>CTF Writeups</h2>
+  <h2>CTF DATABASE</h2>
 
-  <div class="card">Web Exploitation: SQLi, SSTI, IDOR</div>
-  <div class="card">Reverse Engineering: Binary analysis & VM challenges</div>
-  <div class="card">Cryptography: XOR, RSA, ECC attacks</div>
+  <div class="card">Web Exploitation → SQLi / SSTI / IDOR</div>
+  <div class="card">Reverse Engineering → Binary / VM challenges</div>
+  <div class="card">Cryptography → XOR / RSA / ECC</div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>CONTACT NODE</h2>
 
   <div class="card">
-    📧 your@email.com<br/>
-    💻 GitHub: github.com/SagarShahani<br/>
-    🎯 TryHackMe: profile-link<br/>
-    🔗 LinkedIn: add-link
+    📧 <a href="mailto:your@email.com">your@email.com</a><br><br>
+
+    💻 <a href="https://github.com/SagarShahani" target="_blank">GitHub</a><br><br>
+
+    🎯 <a href="https://tryhackme.com" target="_blank">TryHackMe</a><br><br>
+
+    🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a>
   </div>
 </section>
 
-<footer>
-  © 2026 Sagar Ali | Cybersecurity Portfolio
+<footer style="text-align:center; padding:20px; opacity:0.6;">
+SYSTEM STATUS: ONLINE // USER: SAGAR // SECURITY LEVEL: UNKNOWN
 </footer>
 
 <script>
-// TERMINAL TEXT ANIMATION
-const text = document.getElementById("text");
-const messages = [
-  "Initializing SAGAR.EXE...",
-  "Loading cybersecurity modules...",
-  "Deploying malware analysis tools...",
-  "Accessing CTF database...",
-  "Welcome, Sagar."
+
+/* TERMINAL ANIMATION */
+let text = document.getElementById("text");
+let msgs = [
+  "Booting SAGAR.EXE...",
+  "Injecting cyber modules...",
+  "Scanning vulnerabilities...",
+  "Loading CTF environment...",
+  "ACCESS GRANTED"
 ];
 
 let i = 0;
-function typeLine() {
-  if (i < messages.length) {
-    text.innerHTML = messages[i];
+function type() {
+  if (i < msgs.length) {
+    text.innerHTML = msgs[i];
     i++;
-    setTimeout(typeLine, 1200);
+    setTimeout(type, 1200);
   } else {
     document.getElementById("terminal").style.display = "none";
   }
 }
-typeLine();
+type();
 
-
-// MATRIX EFFECT
+/* MATRIX EFFECT */
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
-canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 let letters = "01";
 letters = letters.split("");
@@ -267,22 +207,20 @@ letters = letters.split("");
 let fontSize = 14;
 let columns = canvas.width / fontSize;
 
-let drops = [];
-for (let x = 0; x < columns; x++)
-  drops[x] = 1;
+let drops = Array(Math.floor(columns)).fill(1);
 
 function draw() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "rgba(0,0,0,0.05)";
+  ctx.fillRect(0,0,canvas.width,canvas.height);
 
   ctx.fillStyle = "#00ff88";
   ctx.font = fontSize + "px monospace";
 
   for (let i = 0; i < drops.length; i++) {
-    let text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+    let text = letters[Math.floor(Math.random()*letters.length)];
+    ctx.fillText(text, i*fontSize, drops[i]*fontSize);
 
-    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+    if (drops[i]*fontSize > canvas.height && Math.random() > 0.975)
       drops[i] = 0;
 
     drops[i]++;
